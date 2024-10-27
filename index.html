@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="profile-card">
+        <h1 style="text-align: center; margin-top: 0; position: absolute; top: 200px; width: 100%;">Section Profile</h1>
+
+        <!-- Profile Image -->
+        <div class="profile-image">
+            <img alt="Profile image of a developer with a {dev} shirt" src="Fadhina.jpeg" width="100" height="100" />
+        </div>
+
+        <!-- Profile Info -->
+        <div class="profile-info">
+            <h2 id="profile-name">Fadhina Aqfa Nisa</h2>
+            <p id="profile-role">Front End Designer</p>
+            <div class="profile-buttons">
+                <button class="edit-btn" onclick="TampilkanData()">Edit</button>
+                <button class="resume-btn" onclick="DownloadResume()">Resume</button>
+            </div>
+        </div>
+
+        <!-- Profile Details -->
+        <div class="profile-details">
+            <div class="profile-detail">
+                <span>Availability</span>
+                <span id="profile-availability">Full Time</span>
+            </div>
+            <div class="profile-detail">
+                <span>Usia</span>
+                <span id="profile-age">19</span>
+            </div>
+            <div class="profile-detail">
+                <span>Lokasi</span>
+                <span id="profile-location">Jakarta</span>
+            </div>
+            <div class="profile-detail">
+                <span>Pengalaman</span>
+                <span id="profile-experience">2</span>
+            </div>
+            <div class="profile-detail">
+                <span>Email</span>
+                <span id="profile-email">email@gmail.com</span>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+
+    <!-- Form Container -->
+    <div class="form-container" id="form-container" style="display: none">
+        <h2>Section Form</h2>
+        <form onsubmit="UpdateProfile(event)">
+            <label for="input-name">Nama</label><br />
+            <input type="text" id="input-name" value="Fadhina Aqfa Nisa" /><br />
+            
+            <label for="input-role">Role</label><br />
+            <input type="text" id="input-role" value="Front End Designer" /><br />
+            
+            <label for="input-availability">Availability</label><br />
+            <input type="text" id="input-availability" value="Full Time" /><br />
+            
+            <label for="input-age">Usia</label><br />
+            <input type="number" id="input-age" value="23" /><br />
+            
+            <label for="input-location">Lokasi</label><br />
+            <input type="text" id="input-location" value="Purwokerto" /><br />
+            
+            <label for="input-experience">Years Experience</label><br />
+            <input type="text" id="input-experience" value="2" /><br />
+            
+            <label for="input-email">Email</label><br />
+            <input type="email" id="input-email" value="fadhinaaqfa@gmail.com" /><br /><br />
+            
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
